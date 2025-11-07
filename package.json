@@ -1,0 +1,23 @@
+{
+  "name": "automacao-ui-ebac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugovsantini/automacao-ui-ebac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugovsantini/automacao-ui-ebac/issues"
+  },
+  "homepage": "https://github.com/hugovsantini/automacao-ui-ebac#readme",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
