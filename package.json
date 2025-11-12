@@ -17,7 +17,8 @@
     "url": "https://github.com/hugovsantini/automacao-ui-ebac/issues"
   },
   "homepage": "https://github.com/hugovsantini/automacao-ui-ebac#readme",
-  "dependencies": {
-    "cypress": "^13.6.0"
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "cypress": "^15.6.0"
   }
 }

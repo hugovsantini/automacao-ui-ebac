@@ -1,7 +1,7 @@
 describe('Produtos - Loja EBAC', () => {
 
     it('Deve selecionar um produto, escolher opções e adicionar ao carrinho', () => {
-        cy.visit('http://lojaebac.ebaconline.art.br/')
+        cy.visit('produtos')
 
         // Clica no primeiro produto da lista
         cy.get('.product-block').first().click()
@@ -20,7 +20,7 @@ describe('Produtos - Loja EBAC', () => {
             .should('contain', 'foi adicionado no seu carrinho')
 
         // Abre o carrinho
-        cy.visit('http://lojaebac.ebaconline.art.br/carrinho/')
+        cy.visit('carrinho')
     })
 
 })
