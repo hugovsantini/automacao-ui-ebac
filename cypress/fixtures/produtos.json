@@ -1,0 +1,23 @@
+[
+    {
+      "slug": "abominable-hoodie",
+      "nomeProduto": "Abominable Hoodie",
+      "tamanho": "L",
+      "cor": "Blue",
+      "quantidade": 2
+    },
+    {
+      "slug": "chaz-kangeroo-hoodie",
+      "nomeProduto": "Chaz Kangeroo Hoodie",
+      "tamanho": "L",
+      "cor": "Black",
+      "quantidade": 4
+    },
+    {
+      "slug": "geo-insulated-jogging-pant", 
+      "nomeProduto": "Geo Insulated Jogging Pant",
+      "tamanho": "34",
+      "cor": "Green",
+      "quantidade": 10
+    }
+]

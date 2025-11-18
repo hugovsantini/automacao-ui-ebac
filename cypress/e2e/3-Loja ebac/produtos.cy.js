@@ -54,4 +54,29 @@ describe('Funcionalidades da Loja EBAC - Produtos', () => {
             .should('be.visible')
             .and('contain', 'adicionado no seu carrinho'); // Asserção ajustada para a frase exata
     });
-});
+    it.only('5 - Deve adicionar o produto ao carrinho buscando da massa de dados', () => {
+        cy.fixture('produtos').then((dados) => {
+            dados.forEach((produto) => {
+                
+                // 1. Usa produto.slug (OPÇÃO 1)
+                cy.visit('http://lojaebac.ebaconline.art.br/produtos/' + produto.slug + '/');
+                
+                cy.wait(2000); 
+
+                produtosPage.adicionarProdutoAoCarrinho(
+                    produto.quantidade, 
+                    produto.tamanho, 
+                    produto.cor
+                );
+
+                // 2. Usa produto.nomeProduto na asserção
+                cy.get(produtosPage.mensagemSucessoCarrinho, { timeout: 15000 }) 
+                    .should('be.visible')
+                    .and('contain', produto.nomeProduto) // <-- Corrigido para nomeProduto
+                    .and('contain', 'adicionado no seu carrinho');
+            });
+        });
+    });
+    // ...
+   
+});    
